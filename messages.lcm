@@ -1,0 +1,32 @@
+package messages;
+
+// Position broadcasted by nodes
+// active - True if node is not frozen
+struct position_t {
+  string name; 
+  boolean active;
+  int64_t x;
+  int64_t y;
+}
+
+// Signal to freeze a node
+struct freeze_t {
+  string name;
+}
+
+
+// Signal that a node is alive
+struct alive_t {
+  string name;
+}
+
+
+// Start the game
+struct start_t {
+
+}
+
+// Signal that the game is over
+struct gameover_t {
+    
+}
